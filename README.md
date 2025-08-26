@@ -1,42 +1,25 @@
-# java-game-character
 
-# 🎮 Data Abstraction in Java (DSA Lesson)
+When the program starts running, a pane will immediately ask
+for names for the two players.
 
-## 📌 What is Data Abstraction?
+![Annotation 2025-08-26 142511.png](images%2FAnnotation%202025-08-26%20142511.png)
+![Annotation 2025-08-26 142536.png](images%2FAnnotation%202025-08-26%20142536.png)
 
-- **Abstraction** is the process of showing only the essential details and hiding the implementation.
-- In **OOP with Java**, abstraction is usually implemented using **abstract classes** and **interfaces**.
-- It lets us focus on _what_ an object does, not _how_ it does it.
+After which, a GUI will appear with all the neccessary details.
+A coin flip will be executed internally, which determines the player to take the first turn.
 
----
+![Annotation 2025-08-26 142601.png](images%2FAnnotation%202025-08-26%20142601.png)
 
-## 🐾 Example: Game Characters with Abstraction
+Pressing any of the two buttons will execute a move according on the instantiated character's method. 
+However, it really only returns a text of the move and has no calculations whatsoever. 
 
-We define an **abstract class** `GameCharacter` that all characters must extend.  
-It forces every character to implement `attack()` and `specialMove()`, but allows unique behaviors too.
+![Annotation 2025-08-26 142637.png](images%2FAnnotation%202025-08-26%20142637.png)
 
----
+Special powers are just normal attack moves except it deals 1.5x the normal damage.
 
-## 🕹️ Sample Output
+![Annotation 2025-08-26 142713.png](images%2FAnnotation%202025-08-26%20142713.png)
+![Annotation 2025-08-26 142737.png](images%2FAnnotation%202025-08-26%20142737.png)
 
-```
-Character: Arthas
-Arthas swings a mighty sword!
-Arthas uses Shield Bash!
+This repeats until one character has a current health of zero. By which a pane will appear declaring a winner.
 
-Character: Merlin
-Merlin casts a fireball!
-Merlin uses Lightning Storm!
-Merlin unleashes the Secret Power: Utot 💨!!!
-```
-
----
-
-## 📝 Summary
-
-- **Abstraction** = “Define what, hide how.”
-- Abstract classes/interfaces define the **rules**.
-- Subclasses provide the **details**.
-- Our game example makes it clear:
-  - `GameCharacter` = abstract base
-  - `Warrior`, `Mage` = concrete implementations
+![Annotation 2025-08-26 142802.png](images%2FAnnotation%202025-08-26%20142802.png)
